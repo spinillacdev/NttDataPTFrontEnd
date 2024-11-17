@@ -1,0 +1,126 @@
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+  <div class="container p-4">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8 bg-form-data p-4 rounded-4">
+        <div *ngIf="loading" class="text-center">Cargando...</div>
+
+        <div *ngIf="!loading && user">
+          <h3 class="fs-5">Información básica</h3>
+
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="primerNombre" class="form-label text-label"
+                >Primer Nombre</label
+              >
+              <input
+                type="text"
+                id="primerNombre"
+                class="form-control"
+                value="{{ user.primerNombre }}"
+                disabled
+              />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="segundoNombre" class="form-label text-label"
+                >Segundo Nombre</label
+              >
+              <input
+                type="text"
+                id="segundoNombre"
+                class="form-control"
+                value="{{ user.segundoNombre }}"
+                disabled
+              />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="primerApellido" class="form-label text-label"
+                >Primer Apellido</label
+              >
+              <input
+                type="text"
+                id="primerApellido"
+                class="form-control"
+                value="{{ user.primerApellido }}"
+                disabled
+              />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="segundoApellido" class="form-label text-label"
+                >Segundo Apellido</label
+              >
+              <input
+                type="text"
+                id="segundoApellido"
+                class="form-control"
+                value="{{ user.segundoApellido }}"
+                disabled
+              />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="correo" class="form-label text-label">Correo</label>
+              <input
+                type="email"
+                id="correo"
+                class="form-control"
+                value="{{ user.correo }}"
+                disabled
+              />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="telefono" class="form-label text-label"
+                >Teléfono</label
+              >
+              <input
+                type="text"
+                id="telefono"
+                class="form-control"
+                value="{{ user.telefono }}"
+                disabled
+              />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="edad" class="form-label text-label">Edad</label>
+              <input
+                type="number"
+                id="edad"
+                class="form-control"
+                value="{{ user.edad }}"
+                disabled
+              />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-3">
+              <label for="perfil" class="form-label text-label">Perfil</label>
+              <input
+                type="text"
+                id="perfil"
+                class="form-control"
+                value="{{ user.perfil }}"
+                disabled
+              />
+            </div>
+          </div>
+        </div>
+
+        <div *ngIf="!loading && !user" class="text-center">
+          <p>No se encontró un usuario con este documento.</p>
+        </div>
+        <div class="d-flex justify-content-end">
+          <button
+            [routerLink]="['']"
+            [replaceUrl]="true"
+            class="rounded-pill mt-4 fw-bold py-2 col-4 col-md-3 col-lg-2 button-active"
+          >
+            Volver
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

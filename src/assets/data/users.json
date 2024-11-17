@@ -1,0 +1,112 @@
+[
+  {
+    "documento": "1099214702",
+    "primerNombre": "Sergio",
+    "segundoNombre": "Nicolás",
+    "primerApellido": "Pinilla",
+    "segundoApellido": "Cañon",
+    "correo": "pinilla.nicolas10@gmail.com",
+    "telefono": "322-770-34-26",
+    "edad": 28,
+    "perfil": "Ingeniero Electrónico"
+  },
+  {
+    "documento": "1023476543",
+    "primerNombre": "Laura",
+    "segundoNombre": "",
+    "primerApellido": "González",
+    "segundoApellido": "Martínez",
+    "correo": "laura.gonzalez@mail.com",
+    "telefono": "315-234-56-78",
+    "edad": 34,
+    "perfil": "Abogada"
+  },
+  {
+    "documento": "1032123456",
+    "primerNombre": "Carlos",
+    "segundoNombre": "Alberto",
+    "primerApellido": "Rodríguez",
+    "segundoApellido": "",
+    "correo": "carlos.rodriguez@mail.com",
+    "telefono": "301-123-45-67",
+    "edad": 45,
+    "perfil": "Arquitecto"
+  },
+  {
+    "documento": "1045123456",
+    "primerNombre": "Ana",
+    "segundoNombre": "María",
+    "primerApellido": "López",
+    "segundoApellido": "",
+    "correo": "ana.lopez@gmail.com",
+    "telefono": "314-876-54-32",
+    "edad": 29,
+    "perfil": "Diseñadora Gráfica"
+  },
+  {
+    "documento": "1056123456",
+    "primerNombre": "Felipe",
+    "segundoNombre": "",
+    "primerApellido": "Gómez",
+    "segundoApellido": "Sánchez",
+    "correo": "felipe.gomez@example.com",
+    "telefono": "310-112-23-44",
+    "edad": 38,
+    "perfil": "Médico Cirujano"
+  },
+  {
+    "documento": "1062123456",
+    "primerNombre": "Mariana",
+    "segundoNombre": "",
+    "primerApellido": "Pérez",
+    "segundoApellido": "Hernández",
+    "correo": "mariana.perez@mail.com",
+    "telefono": "318-567-89-01",
+    "edad": 25,
+    "perfil": "Psicóloga"
+  },
+  {
+    "documento": "1078123456",
+    "primerNombre": "Javier",
+    "segundoNombre": "",
+    "primerApellido": "Ramírez",
+    "segundoApellido": "Soto",
+    "correo": "javier.ramirez@mail.com",
+    "telefono": "320-999-88-77",
+    "edad": 40,
+    "perfil": "Desarrollador de Software"
+  },
+  {
+    "documento": "1085123456",
+    "primerNombre": "Isabel",
+    "segundoNombre": "",
+    "primerApellido": "Fernández",
+    "segundoApellido": "Jiménez",
+    "correo": "isabel.fernandez@mail.com",
+    "telefono": "310-123-45-67",
+    "edad": 32,
+    "perfil": "Consultora de Negocios"
+  },
+  {
+    "documento": "1092123456",
+    "primerNombre": "David",
+    "segundoNombre": "",
+    "primerApellido": "Sánchez",
+    "segundoApellido": "García",
+    "correo": "david.sanchez@mail.com",
+    "telefono": "317-564-23-78",
+    "edad": 29,
+    "perfil": "Fotógrafo"
+  },
+  {
+    "documento": "1102123456",
+    "primerNombre": "Verónica",
+    "segundoNombre": "",
+    "primerApellido": "Díaz",
+    "segundoApellido": "Romero",
+    "correo": "veronica.diaz@mail.com",
+    "telefono": "305-432-12-34",
+    "edad": 26,
+    "perfil": "Terapista Ocupacional"
+  }
+]

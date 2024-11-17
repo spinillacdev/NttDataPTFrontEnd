@@ -1,0 +1,113 @@
+<div class="d-flex justify-content-center align-items-center min-vh-100">
+  <div class="container p-4">
+    <div class="row justify-content-center">
+      <div class="col-md-7 col-lg-5 bg-form-data p-5 rounded-4">
+        <p class="text-muted text-title">Todos los campos son obligatorios</p>
+        <form
+          class="d-flex justify-content-center row"
+          [formGroup]="documentForm"
+          (ngSubmit)="onSubmit()"
+          novalidate
+        >
+          <div class="mb-3">
+            <label for="documentType" class="form-label text-label"
+              >Tipo de Documento</label
+            >
+            <select
+              id="documentType"
+              class="form-select"
+              formControlName="documentType"
+              [ngClass]="{
+                'is-invalid':
+                  documentForm.get('documentType')?.touched &&
+                  documentForm.get('documentType')?.invalid
+              }"
+            >
+              >
+              <option value="" disabled selected>
+                Seleccione un tipo de documento
+              </option>
+              <option value="1">Cédula de ciudadanía</option>
+              <option value="2">Pasaporte</option>
+            </select>
+            <div
+              class="invalid-feedback"
+              *ngIf="
+                documentForm.get('documentType')?.touched &&
+                documentForm.get('documentType')?.invalid
+              "
+            >
+              Este campo es obligatorio.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="documentNumber" class="form-label text-label"
+              >Número de Documento</label
+            >
+            <input
+              type="text"
+              id="documentNumber"
+              class="form-control"
+              placeholder="Ingrese el número de documento"
+              formControlName="documentNumber"
+              (input)="formatDocumentNumber()"
+              [ngClass]="{
+                'is-invalid':
+                  documentForm.get('documentNumber')?.touched &&
+                  documentForm.get('documentNumber')?.invalid
+              }"
+            />
+            <div
+              class="text-danger"
+              *ngIf="
+                documentForm.get('documentNumber')?.touched &&
+                documentForm.get('documentNumber')?.hasError('required')
+              "
+            >
+              Este campo es obligatorio.
+            </div>
+            <div
+              class="text-danger"
+              *ngIf="
+                documentForm.get('documentNumber')?.touched &&
+                documentForm.get('documentNumber')?.hasError('minlength')
+              "
+            >
+              El número de documento debe tener al menos 8 caracteres.
+            </div>
+            <div
+              class="text-danger"
+              *ngIf="
+                documentForm.get('documentNumber')?.touched &&
+                documentForm.get('documentNumber')?.hasError('maxlength')
+              "
+            >
+              El número de documento no debe exceder los 11 caracteres.
+            </div>
+            <div
+              class="text-danger"
+              *ngIf="
+                documentForm.get('documentNumber')?.touched &&
+                documentForm.get('documentNumber')?.hasError('pattern')
+              "
+            >
+              El número de documento solo puede contener números.
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="col-md-9 col-lg-6 rounded-pill mt-4 fw-bold py-2"
+            [disabled]="!documentForm.valid"
+            [ngClass]="{
+              'button-active': documentForm.valid,
+              'button-inactive': !documentForm.valid
+            }"
+          >
+            Buscar
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
